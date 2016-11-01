@@ -15,7 +15,7 @@ const Tooltip = (props)=>(
 Tooltip.propTypes = {
 	style: PropTypes.object,
 	wrapClassName: PropTypes.string,
-	hoverContent: PropTypes.any.isRequired,
+	content: PropTypes.any.isRequired,
 	distance: PropTypes.number,
 	arrow: PropTypes.bool
 }
@@ -25,7 +25,7 @@ Tooltip.defaultProps = {
 	mouseLeaveDelay: 0.1, //延时多少秒不可见
 	placement: 'bottomLeft',
 	trigger: 'hover',
-	hoverContent:'提示内容',
+	content:'提示内容',
 	arrow: true,
 	distance: 5   //tooltip 与触发元素之间的距离
 }

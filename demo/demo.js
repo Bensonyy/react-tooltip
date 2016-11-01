@@ -24,21 +24,21 @@ class Demo extends React.Component{
 				<Tooltip 
 						style={style}
 						placement='top'
-						hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+						content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 					>
 					<a href="javascript:;">上</a>
 				</Tooltip>
 				<Tooltip 
 						style={style}
 						placement='topLeft'
-						hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+						content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 					>
 					<a href="javascript:;">上左</a>
 				</Tooltip>
 				<Tooltip 
 						style={style}
 						placement='topRight'
-						hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+						content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 					>
 					<a href="javascript:;">上右</a>
 				</Tooltip>
@@ -49,21 +49,21 @@ class Demo extends React.Component{
 				<Tooltip 
 					style={style}
 					placement='bottom'
-					hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+					content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 				>
 					<a href="javascript:;">下</a>
 				</Tooltip>
 				<Tooltip 
 					style={style}
 					placement='bottomLeft'
-					hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+					content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 				>
 					<a href="javascript:;">下左</a>
 				</Tooltip>
 				<Tooltip 
 					style={style}
 					placement='bottomRight'
-					hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+					content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 				>
 					<a href="javascript:;">下右</a>
 				</Tooltip>
@@ -74,21 +74,21 @@ class Demo extends React.Component{
 				<Tooltip 
 					style={style}
 					placement='left'
-					hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+					content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 				>
 					<a href="javascript:;">左</a>
 				</Tooltip>
 				<Tooltip 
 					style={style}
 					placement='leftTop'
-					hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+					content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 				>
 					<a href="javascript:;">左上</a>
 				</Tooltip>
 				<Tooltip 
 					style={style}
 					placement='leftBottom'
-					hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+					content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 				>
 					<a href="javascript:;">左下</a>
 				</Tooltip>
@@ -99,14 +99,14 @@ class Demo extends React.Component{
 				<Tooltip 
 					style={style}
 					placement='right'
-					hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+					content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 				>
 					<a href="javascript:;">右</a>
 				</Tooltip>
 				<Tooltip 
 					style={style}
 					placement='rightTop'
-					hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+					content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 					arrow = {false}
 					distance= { 10 }
 				>
@@ -115,7 +115,7 @@ class Demo extends React.Component{
 				<Tooltip 
 					style={style}
 					placement='rightBottom'
-					hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+					content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 				>
 					<a href="javascript:;">右下</a>
 				</Tooltip>

@@ -12,7 +12,7 @@ import Tooltip from '../src/Tooltip'
 
 <Tooltip 
   placement='bottom'
-  hoverContent={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
+  content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 >
   <a href="javascript:;">下</a>
 </Tooltip>
@@ -26,7 +26,7 @@ import Tooltip from '../src/Tooltip'
 
 <Tooltip 
   placement='bottomLeft'
-  hoverContent='hello world!'
+  content='hello world!'
   arrow = { false }         //不显示箭头
   distance= { 10 }          //tooltip 与触发元素之间的距离
 >
@@ -79,8 +79,8 @@ Tooltip props
           <td>The distance between tooltip and the trigger element</td>
         </tr>
         <tr>
-          <td>hoverContent</td>
-          <td>React.element</td>
+          <td>content</td>
+          <td>React.element||String</td>
           <td></td>
           <td>Custom tooltip's content </td>
         </tr>

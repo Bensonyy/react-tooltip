@@ -23,7 +23,7 @@ class Tip extends React.Component{
 	}
 	render(){
 		let wrapStyle = {};
-		let { style={}, visible, wrapClassName, placement, arrow, hoverContent} = this.props;
+		let { style={}, visible, wrapClassName, placement, arrow, content} = this.props;
 		
 		let { zIndex, ...restStyle } = style;
 		
@@ -45,7 +45,7 @@ class Tip extends React.Component{
 		      <div key="tooltip" ref="tooltip" className={classNames} style={ wrapStyle }>
 		        <div className="rc-tooltip-content" ref="tooltipContent">
 		          { domArrow }
-		          <div className="rc-tooltip-inner" style={ restStyle }>{ hoverContent }</div>
+		          <div className="rc-tooltip-inner" style={ restStyle }>{ content }</div>
 		        </div>
 		      </div>
 			)
