@@ -85,7 +85,7 @@ Tooltip props
         </tr>
         <tr>
           <td>content</td>
-          <td>React.element||String</td>
+          <td>React.element || String</td>
           <td></td>
           <td>Custom tooltip's content </td>
         </tr>
