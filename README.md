@@ -10,7 +10,12 @@ Actual directory of tooltip components in the import project, You may use it lik
 ```
 import Tooltip from '../src/Tooltip'
 
+const style = {
+  width: 500,
+  height: 300
+}
 <Tooltip 
+  style={style}
   placement='bottom'
   content={ <div>实际乘坐：上海航空FM9317<br/>请按实际乘坐航班办理值机。</div> }
 >
