@@ -39,16 +39,19 @@ class Trigger extends React.Component{
 				that.placement(that.triggerEle, tooltip);
 			}
 
-			Base.addEvent(tooltipContent, 'mouseenter', function(){
-				that.tipVisible = true;
-			});
+			if (!that.initBind) {
+				Base.addEvent(tooltipContent, 'mouseenter', function(){
+					that.tipVisible = true;
+				});
 
-			Base.addEvent(tooltipContent, 'mouseleave', function(){
-				that.triVisible = false;
-				that.tipVisible = false;
-				that.handlerLeave();
-			});
+				Base.addEvent(tooltipContent, 'mouseleave', function(){
+					that.triVisible = false;
+					that.tipVisible = false;
+					that.handlerLeave();
+				});
 
+				that.initBind = true;
+			}
 		}, mouseEnterDelay*1000);
 	}
 	mouseLeave(e){
