@@ -11,8 +11,7 @@ Actual directory of tooltip components in the import project, You may use it lik
 import Tooltip from '../src/Tooltip'
 
 const style = {
-  width: 500,
-  height: 300
+  width: 180
 }
 <Tooltip 
   style={style}
