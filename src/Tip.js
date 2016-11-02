@@ -36,13 +36,12 @@ class Tip extends React.Component{
 		let classNames = `rc-tooltip${wrapClassName?' '+wrapClassName:''}`;
 		classNames +=` rc-tooltip-placement-${placement}`;
 
-
 		let domArrow;
 		if ( arrow ) {
 			domArrow = <div className="rc-tooltip-arrow"><div className="rc-tooltip-arrow-inner"></div></div>
 		}
 		return(
-		      <div key="tooltip" ref="tooltip" className={classNames} style={ wrapStyle }>
+		      <div ref="tooltip" className={classNames} style={ wrapStyle }>
 		        <div className="rc-tooltip-content" ref="tooltipContent">
 		          { domArrow }
 		          <div className="rc-tooltip-inner" style={ restStyle }>{ content }</div>

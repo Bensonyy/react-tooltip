@@ -24,7 +24,10 @@ class Trigger extends React.Component{
 		this.triggerEle = ReactDOM.findDOMNode(this.refs.triggerEle);
 	}
 
-	mouseEnter(){
+	mouseEnter(e){
+		e.stopPropagation();
+		e.preventDefault();
+
 		this.triVisible = true;
 		this.tipVisible = true;	
 		const that = this;
@@ -32,7 +35,9 @@ class Trigger extends React.Component{
 
 		setTimeout(function(){
 			that.renderTip();
-			that.placement(that.triggerEle, tooltip);
+			if (!that.initPlacement) {
+				that.placement(that.triggerEle, tooltip);
+			}
 
 			Base.addEvent(tooltipContent, 'mouseenter', function(){
 				that.tipVisible = true;
@@ -46,7 +51,10 @@ class Trigger extends React.Component{
 
 		}, mouseEnterDelay*1000);
 	}
-	mouseLeave(){
+	mouseLeave(e){
+		e.stopPropagation();
+		e.preventDefault();
+
 		this.triVisible = false;
 		this.tipVisible = false;	
 		this.handlerLeave();
@@ -63,6 +71,7 @@ class Trigger extends React.Component{
 	placement(triggerEle, tooltip){
 		const { placement, distance } = this.props;
 		new Placement( { triggerEle, tooltip, placement, distance } );
+		this.initPlacement = true;
 	}
 
 	renderTip(){
