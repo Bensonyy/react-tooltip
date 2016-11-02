@@ -1,5 +1,5 @@
 /**
- * demo 如何使用 react-dialog
+ * demo 如何使用 react-tooltip
  * @author  yongbing
  * @email   yongbingz@qq.com
  */
