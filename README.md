@@ -90,14 +90,14 @@ Tooltip props
         </tr>
         <tr>
           <td>mouseEnterDelay</td>
-          <td>0</td>
           <td>Number</td>
+          <td>0</td>
           <td>Delay how many seconds visible</td>
         </tr>
         <tr>
           <td>mouseLeaveDelay</td>
-          <td>0.1</td>
           <td>Number</td>
+          <td>0.1</td>
           <td>Delay how many seconds is not visible</td>
         </tr>
     </tbody>
