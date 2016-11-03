@@ -8,9 +8,6 @@ import ReactDOM from 'react-dom'
 import './demo.scss'
 import Tooltip from '../src/Tooltip'
 
-
-const text = <span>提示文字</span>;
-
 class Demo extends React.Component{
 	render(){
 		let tooltip;
